@@ -1,0 +1,11 @@
+nomor 5 :
+SELECT buku.id, buku.judul_buku, buku.deskripsi, penulis.nama_penulis, kategori.kategori, buku.tahun_terbit FROM buku
+LEFT JOIN penulis ON buku.id_penulis = penulis.id
+LEFT JOIN kategori ON buku.id_kategori = kategori.id
+WHERE penulis.nama_penulis = "ABDUL";
+
+nomor 6 :
+SELECT buku.id, buku.judul_buku, buku.deskripsi, penulis.nama_penulis, kategori.kategori, buku.tahun_terbit FROM buku
+LEFT JOIN penulis ON buku.id_penulis = penulis.id
+LEFT JOIN kategori ON buku.id_kategori = kategori.id
+WHERE kategori.kategori = "CERPEN";
